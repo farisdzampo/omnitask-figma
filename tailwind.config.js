@@ -8,7 +8,19 @@ module.exports = {
 
       backgroundColor: {
         'primary': '#16161A',
-        'purple-primary': '#7F5AF0;'
+        
+      },
+
+      backgroundImage: {
+        'rectangle': 'linear-gradient(90deg, #2CB67D 0%, #7F5AF0 100%)'
+      },
+
+      colors: {
+
+        paragraph: '#94A1B2',
+        'purple-primary': '#7F5AF0;',
+        'green-elipse' : '#2CB67D',
+        'purple-elipse' : '#5E43B3'
       },
       width: {
 
@@ -16,7 +28,11 @@ module.exports = {
       },
       fontFamily: {
 
-        inter: ['Inter']
+        inter: ['Inter'],
+        epilogue: ['Epilogue']
+      },
+      fontSize: {
+        heroTitle: ['64px', '80px']
       },
       height: {
 

@@ -1,13 +1,38 @@
 const Hero = () => {
-
-    return (
-
-        <section className="relative h-hero mx-auto" style={{ width: 887 }}>
-            <div className="absolute top-0 left-0 rotate-180 opacity-20" style={{ width: 545, height: 544, background: '#2CB67D', filter: 'blur(100px)', borderRadius: '50%' }} />
-            <div className="absolute right-0 rotate-180 opacity-20" style={{ width: 436, height: 436, background: '#7F5AF0', filter: 'blur(100px)', top: 50, borderRadius: '50%' }} />
-            <div className="absolute bottom-0 rotate-180 opacity-20" style={{ width: 544, height: 544, background: '#5E43B3', filter: 'blur(100px)', left: '50%', transform: 'translate(-50%, 0)', borderRadius: '50%' }} />
-        </section>
-    );
+  return (
+    <section className="relative h-hero mx-auto mt-40" style={{ width: 887 }}>
+      <div className="text-center w-full z-10 relative" style={{ maxWidth: 832 }}>
+        <h1 className="text-white font-epilogue font-bold text-heroTitle mb-4">
+          Every business needs trustworthy data
+        </h1>
+        <p className="font-inter font-normal text-lg leading-8 text-paragraph">
+          Data integrity accelerates processes, reduces costs, and opens new
+          opportunities.
+        </p>
+        <p className="font-inter font-normal text-lg leading-8 text-paragraph">
+          Boost your data value with Moonbeam-powered Authtrail.
+        </p>
+        <p className="font-inter font-normal text-lg leading-8 text-paragraph">
+          Faster, cheaper, safer.
+        </p>
+        <button
+          type="button"
+          className="mt-8 py-5 px-6 rounded border border-purple-primary font-inter font-bold text-base text-white "
+        >
+          Try free Authtrail Demo
+        </button>
+      </div>
+      <div
+        className="absolute left-0 rotate-180 opacity-20 w-[545px] h-[544px] top-[-100px] blur-[100px] rounded-[50%] bg-green-elipse"
+      />
+      <div
+        className="absolute right-0 rotate-180 opacity-20 w-[436px] h-[436px] top-[-100px] blur-[100px] rounded-[50%] bg-purple-primary"
+      />
+      <div
+        className="absolute bottom-0 rotate-180 opacity-20 w-[544px] h-[544px] top-[-100px] blur-[100px] left-[50%] rounded-[50%] translate-x-[-50%] translate-y-2/4 bg-purple-elipse"
+      />
+    </section>
+  );
 };
 
 export default Hero;
