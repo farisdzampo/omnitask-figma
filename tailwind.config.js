@@ -8,6 +8,7 @@ module.exports = {
 
       backgroundColor: {
         'primary': '#16161A',
+        'card': '#242629'
         
       },
 
@@ -20,8 +21,14 @@ module.exports = {
         paragraph: '#94A1B2',
         'purple-primary': '#7F5AF0;',
         'green-elipse' : '#2CB67D',
-        'purple-elipse' : '#5E43B3'
+        'purple-elipse' : '#5E43B3',
+        'background': '#16161A'
       },
+
+      boxShadow: {
+        'cards': '0px 16px 32px rgba(0, 0, 0, 0.8)'
+      },
+
       width: {
 
         dzampo: '300px'

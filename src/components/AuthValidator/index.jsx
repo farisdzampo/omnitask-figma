@@ -1,3 +1,5 @@
+import Button from "../Button";
+
 const obj = {
   data: {
     id: "60c9c15b32c2e900086c929c",
@@ -18,7 +20,12 @@ const obj = {
 
 const AuthValidator = () => {
   return (
-    <section className="pb-[400px]">
+    <section className="pb-0 relative max-h-fit">
+      <div>
+        <div className="absolute right-[200px] rotate-180 opacity-20 w-[436px] h-[436px] top-[250px] blur-[100px] rounded-[50%] bg-purple-primary" />
+        <div className="absolute bottom-0 rotate-180 opacity-20 w-[436px] h-[436px] top-[250px] blur-[100px] left-[50%] rounded-[50%] translate-x-[-50%] translate-y-2/4 bg-green-elipse" />
+        <div className="absolute left-[200px] rotate-180 opacity-20 w-[545px] h-[544px] top-[250px] blur-[100px] rounded-[50%] bg-purple-elipse" />
+      </div>
       <div className="text-center mt-80">
         <p className="text-purple-primary font-epilogue font-bold text-sm leading-[22px] tracking-[0.25em] uppercase">
           Authtrail Validator
@@ -30,16 +37,15 @@ const AuthValidator = () => {
           The open-source Authtrail Validator helps you verify data instantly
           and reliably with a straightforward request to Authtrail API.
         </p>
-        <button
-          type="button"
-          className="mt-8 py-5 px-6 rounded border border-purple-primary font-inter font-bold text-base text-white "
-        >
+        <Button>
           Try Authtrail Validator
-        </button>
+        </Button>
       </div>
       <div className="mt-[112px] gap-x-8 flex justify-center">
-        <div className="w-[616px] p-12 bg-[#010101]">
-          <p className="text-white font-epilogue font-bold mb-4 text-2xl leading-9">Request to API</p>
+        <div className="w-[616px] p-12 bg-[#010101] z-10">
+          <p className="text-white font-epilogue font-bold mb-4 text-2xl leading-9">
+            Request to API
+          </p>
           <code className="break-all w-full code text-paragraph font-inter font-normal text-base leading-7">{`$ curl -X 'POST' 'https://serviceapi-staging.authtrail.com/data' \\
 -H 'x-api-key: {API_KEY}' \\
 -H 'Content-Type: application/json; charset=utf-8' \\
@@ -52,8 +58,10 @@ const AuthValidator = () => {
   }
 }'`}</code>
         </div>
-        <div className="w-[616px] h-[628px] p-12 bg-[#010101]">
-          <p className="text-white font-epilogue font-bold mb-4 text-2xl leading-9">Response</p>
+        <div className="w-[616px] h-[628px] p-12 bg-[#010101] z-10">
+          <p className="text-white font-epilogue font-bold mb-4 text-2xl leading-9">
+            Response
+          </p>
           <pre className="break-all w-full code text-paragraph font-inter font-normal text-base leading-7">
             {JSON.stringify(obj, undefined, 1)}
           </pre>
